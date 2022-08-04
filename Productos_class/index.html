@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./producto.js"></script>
+    <script>
+        let productos = []
+        console.log(productos)
+        let producto1 = new Producto ("Galletitas","Oreos","Galletitas de chocolate con relleno de crema","comestible",150, 200)
+        let producto2 = new Producto ("Jugo","Tang","Jugo en polvo para preparar","Bebidas",20, 100)
+        productos.push(producto1)
+        productos.push(producto2)
+        for (let item of productos){
+            document.write(item.datos_producto()+"<br>")
+        }
+
+        /*console.log(productos)*/
+
+        /*document.write(producto1.stock+"<br>")
+        producto1.compra(2)
+        document.write(producto1.datos_producto())*/
+    </script>
+    
+</body>
+</html>
